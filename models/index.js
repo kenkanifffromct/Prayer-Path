@@ -1,4 +1,4 @@
 module.exports = {
-    Book: require("./prayer")
+    Prayer: require("./prayer")
   };
   
