@@ -10,19 +10,19 @@ mongoose.connect(
 const prayerSeed = [
   {
     name: "Rylee (dog)",
-    detail:
+    details:
       "Hurt leg really bad. Also, having kidney issues",
     date: new Date(Date.now())
   },
   {
     name: "Pop-Pop",
-    detail:
+    details:
       "Worsening Alzheimer's",
     date: new Date(Date.now())
   },
   {
     name: "Me",
-    detail:
+    details:
       "Coding Bootcamp is OVER! Woooo!",
     date: new Date(Date.now())
   }];

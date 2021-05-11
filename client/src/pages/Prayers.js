@@ -43,14 +43,14 @@ function Prayers() {
   // Then reload Prayers from the database
   function handleFormSubmit(event) {
     event.preventDefault();
-    if (formObject.name && formObject.name) {
+    
       API.savePrayer({
         name: formObject.name,
-        detail: formObject.detail
+        details: formObject.details
       })
         .then(res => loadPrayers())
         .catch(err => console.log(err));
-    }
+    
   };
 
     return (
@@ -63,7 +63,7 @@ function Prayers() {
             <form>
               <Input
                 onChange={handleInputChange}
-                name="Name"
+                name="name"
                 placeholder="Name (required)"
               />
               {/* <Select
@@ -77,7 +77,7 @@ function Prayers() {
                 placeholder="Details (Leave empty if unspoken)"
               />
               <FormBtn
-                disabled={!(formObject.name)}
+                // disabled={!(formObject.name)}
                 onClick={handleFormSubmit}
               >
                 Submit Prayer

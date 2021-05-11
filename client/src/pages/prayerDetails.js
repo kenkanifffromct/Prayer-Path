@@ -7,8 +7,8 @@ import API from "../utils/API";
 function Detail(props) {
   const [prayer, setPrayer] = useState({})
 
-  // When this component mounts, grab the book with the _id of props.match.params.id
-  // e.g. localhost:3000/books/599dcb67f0f16317844583fc
+  // When this component mounts, grab the prayer with the _id of props.match.params.id
+  // e.g. localhost:3000/prayers/599dcb67f0f16317844583fc
   const {id} = useParams()
   useEffect(() => {
     API.getPrayer(id)
@@ -30,9 +30,9 @@ function Detail(props) {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Synopsis</h1>
+              <h1>Prayer Details</h1>
               <p>
-                {prayer.detail}
+                {prayer.details}
               </p>
             </article>
           </Col>

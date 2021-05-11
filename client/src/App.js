@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Prayers from "./pages/Prayers";
-import prayerDetails from "./pages/prayerDetails";
-import pageNotFound from "./pages/pageNotFound";
+import PrayerDetails from "./pages/PrayerDetails";
+import PageNotFound from "./pages/PageNotFound";
 import Nav from "./components/Nav";
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
             <Prayers />
           </Route>
           <Route exact path="/prayers/:id">
-            <prayerDetails />
+            <PrayerDetails />
           </Route>
           <Route>
-            <pageNotFound />
+            <PageNotFound />
           </Route>
         </Switch>
       </div>

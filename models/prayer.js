@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const prayerSchema = new Schema({
   name: { type: String, required: true },
-  detail: String,
+  details: String,
   date: { type: Date, default: Date.now }
 });
 
