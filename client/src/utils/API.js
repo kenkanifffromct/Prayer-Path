@@ -11,7 +11,7 @@ export default {
   },
   // Deletes the prayer with the given id
   deletePrayer: function(id) {
-    return axios.delete("/api/prayer/" + id);
+    return axios.delete("/api/prayers/" + id);
   },
   // Saves a prayer to the database
   savePrayer: function(prayerData) {
