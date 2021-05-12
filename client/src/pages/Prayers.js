@@ -7,7 +7,6 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import '../style.css';
-import JesusBruh from '../images/jesus-what-cropped.png';
 
 function Prayers() {
   // Setting our component's initial state
@@ -60,7 +59,7 @@ function Prayers() {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1 id= 'newPrayer' style={{ fontFamily: 'Amatic SC', cursive: true, color: 'white'}} >New Prayer Request</h1>
+              <h1 id= 'newPrayer' style={{ fontFamily: 'Amatic SC', cursive: true, color: 'white', fontSize: 60}} >New Prayer Request</h1>
             </Jumbotron>
             <form>
               <Input
@@ -88,7 +87,7 @@ function Prayers() {
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1  id= 'myPrayers' style={{ fontFamily: 'Amatic SC', cursive: true, color: 'white' }} >Prayers</h1>
+              <h1  id= 'myPrayers' style={{ fontFamily: 'Amatic SC', cursive: true, color: 'white', fontSize: 60 }} >Prayers</h1>
             </Jumbotron>
             {Prayers.length ? (
               <List>
@@ -106,9 +105,6 @@ function Prayers() {
             ) : (
               <>
               <h3>Need Prayers</h3>
-              <div className = "Jesus-bruh"
-              img src = {JesusBruh}
-              />
               </>
             )}
           </Col>
