@@ -30,7 +30,7 @@ function Detail(props) {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Prayer Details</h1>
+              <h1>{prayer.name}</h1>
               <p>
                 {prayer.details}
               </p>

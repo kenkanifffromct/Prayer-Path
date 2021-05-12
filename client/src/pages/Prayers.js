@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+import '../style.css';
+import JesusBruh from '../images/jesus-what-cropped.png';
 
 function Prayers() {
   // Setting our component's initial state
@@ -58,7 +60,7 @@ function Prayers() {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1 style={{ fontFamily: 'Amatic SC', cursive: true }} >New Prayer Request</h1>
+              <h1 id= 'newPrayer' style={{ fontFamily: 'Amatic SC', cursive: true, color: 'white'}} >New Prayer Request</h1>
             </Jumbotron>
             <form>
               <Input
@@ -86,7 +88,7 @@ function Prayers() {
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1 style={{ fontFamily: 'Amatic SC', cursive: true, }} >Prayers On My List</h1>
+              <h1  id= 'myPrayers' style={{ fontFamily: 'Amatic SC', cursive: true, color: 'white' }} >Prayers</h1>
             </Jumbotron>
             {Prayers.length ? (
               <List>
@@ -102,7 +104,12 @@ function Prayers() {
                 ))}
               </List>
             ) : (
-              <h3>No Results to Display</h3>
+              <>
+              <h3>Need Prayers</h3>
+              <div className = "Jesus-bruh"
+              img src = {JesusBruh}
+              />
+              </>
             )}
           </Col>
         </Row>

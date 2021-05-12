@@ -25,7 +25,32 @@ const prayerSeed = [
     details:
       "Coding Bootcamp is OVER! Woooo!",
     date: new Date(Date.now())
-  }];
+  },
+  {
+    name: "Uncle Art",
+    details:
+      "In the ER. Possible back issues, maybe heart. Waiting for more info.",
+    date: new Date(Date.now())
+  },
+  {
+    name: "Torian",
+    details:
+      "Finding a new car after she totalled her old one.",
+    date: new Date(Date.now())
+  },
+  {
+    name: "Ashley",
+    details:
+      "Needs to meet her requirements for becoming a dulah",
+    date: new Date(Date.now())
+  },
+  {
+    name: "Youth Group",
+    details:
+      "New leadership needed. Hopefully it's found soon.",
+    date: new Date(Date.now())
+  },
+];
 
   db.Prayer
   .remove({})
