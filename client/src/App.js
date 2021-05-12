@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Prayers from "./pages/Prayers";
-import Detail from "./pages/PrayerDetails.js";
+import Detail from "./pages/PrayerDetails";
 import PageNotFound from "./pages/PageNotFound";
 import Nav from "./components/Nav";
 
