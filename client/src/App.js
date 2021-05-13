@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Prayers from "./pages/Prayers";
-import Detail from "./pages/PrayerDetails";
+import Details from "./pages/Details";
 import PageNotFound from "./pages/PageNotFound";
 import Nav from "./components/Nav";
 
@@ -15,7 +15,7 @@ function App() {
             <Prayers />
           </Route>
           <Route exact path="/prayers/:id">
-            <Detail />
+            <Details />
           </Route>
           <Route>
             <PageNotFound />
