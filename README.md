@@ -5,3 +5,5 @@ Prayer Path is a very simple application that allows the user to post their own 
 
 ### Demo
 ![GitHub Logo](client/src/images/Prayer-Path-Demo.gif)
+
+[Deployed Heroku App](https://prayer-path.herokuapp.com/)
