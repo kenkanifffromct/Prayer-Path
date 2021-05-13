@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Prayers from "./pages/Prayers";
 import Details from "./pages/Details";
-import PageNotFound from "./pages/PageNotFound";
+import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
             <Details />
           </Route>
           <Route>
-            <PageNotFound />
+            <NoMatch />
           </Route>
         </Switch>
       </div>
